@@ -1,0 +1,122 @@
+/* Reset body margin and set base font */
+body {
+  margin: 0; /* Remove default browser margin */
+  font-family: 'Poppins', sans-serif; /* Modern, clean font */
+  background-color: #0f0f0f; /* Dark background */
+  color: #fff; /* Text color */
+  line-height: 1.6; /* Better readability */
+}
+
+/* Header / Hero section */
+header {
+  background: linear-gradient(90deg, #8a2be2, #ff1493); /* Purple to pink gradient */
+  padding: 100px 20px; /* Top/bottom and left/right spacing */
+  text-align: center; /* Center the text */
+}
+
+/* Header content */
+.header-content h1 {
+  font-size: 3rem; /* Large main title */
+  margin-bottom: 20px; /* Space below the title */
+}
+
+.header-content p {
+  font-size: 1.2rem; /* Slightly bigger than normal text */
+  margin-bottom: 30px; /* Space below the paragraph */
+  color: #f0f0f0; /* Light text color */
+}
+
+/* Primary button styling */
+.btn-primary {
+  background-color: #ff4500; /* Bright orange */
+  color: white; /* Text color */
+  text-decoration: none; /* Remove underline */
+  padding: 15px 30px; /* Button padding */
+  border-radius: 12px; /* Rounded corners */
+  font-weight: bold; /* Bold text */
+  transition: 0.3s; /* Smooth hover effect */
+}
+
+.btn-primary:hover {
+  background-color: #ff6347; /* Change color slightly on hover */
+}
+
+/* Features section */
+.features {
+  padding: 60px 20px; /* Section spacing */
+  text-align: center; /* Center text */
+  background-color: #111; /* Darker section background */
+}
+
+.features h2 {
+  font-size: 2rem; /* Section title size */
+  margin-bottom: 40px; /* Space below title */
+  color: #ff69b4; /* Pink highlight */
+}
+
+/* Feature cards container */
+.feature-cards {
+  display: flex; /* Arrange cards in a row */
+  flex-wrap: wrap; /* Wrap on small screens */
+  justify-content: center; /* Center the cards */
+  gap: 20px; /* Space between cards */
+}
+
+/* Individual feature card */
+.card {
+  background-color: #1e1e1e; /* Dark card background */
+  border-radius: 16px; /* Rounded corners */
+  padding: 30px 20px; /* Card padding */
+  width: 250px; /* Fixed card width */
+  box-shadow: 0 0 20px rgba(255, 69, 0, 0.2); /* Soft orange glow */
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effect */
+}
+
+.card:hover {
+  transform: translateY(-10px); /* Lift card slightly */
+  box-shadow: 0 0 25px rgba(255, 69, 0, 0.5); /* Glow intensifies */
+}
+
+/* Card images */
+.card img {
+  width: 60px; /* Fixed icon width */
+  margin-bottom: 15px; /* Space below image */
+}
+
+/* Card titles */
+.card h3 {
+  margin-bottom: 10px; /* Space below title */
+  color: #ff69b4; /* Pink highlight */
+}
+
+/* Card descriptions */
+.card p {
+  font-size: 0.9rem; /* Slightly smaller text */
+  color: #ccc; /* Light grey */
+}
+
+/* Footer styling */
+footer {
+  background-color: #111; /* Dark footer */
+  padding: 30px 20px; /* Footer padding */
+  text-align: center; /* Center text */
+  font-size: 0.9rem; /* Smaller text */
+  color: #aaa; /* Grey color */
+}
+
+footer a {
+  color: #ff4500; /* Orange link color */
+  text-decoration: none; /* Remove underline */
+}
+
+footer a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .feature-cards {
+    flex-direction: column; /* Stack cards vertically */
+    align-items: center; /* Center cards */
+  }
+}
